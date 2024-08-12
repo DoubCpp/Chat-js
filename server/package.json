@@ -1,0 +1,19 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A simple chat application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "chat-app": "file:",
+    "express": "^4.19.2",
+    "mongoose": "^5.13.22",
+    "open": "^10.1.0",
+    "randomcolor": "^0.6.2",
+    "socket.io": "^4.7.5"
+  },
+  "author": "",
+  "license": "ISC"
+}

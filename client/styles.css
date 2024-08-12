@@ -1,0 +1,79 @@
+/* styles.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+#username-container {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 300px;
+}
+
+#username-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#username-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+#username-input:focus {
+  background-color: #e0e0e0;
+}
+
+#username-button {
+  background: #6e8efb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#username-button:hover {
+  background-color: #a777e3;
+}
+
+#username-button:active {
+  background-color: #574b90;
+}
+
+#username-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
